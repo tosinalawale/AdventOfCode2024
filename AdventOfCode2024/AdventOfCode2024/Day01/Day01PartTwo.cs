@@ -1,6 +1,6 @@
 ﻿namespace AdventOfCode2024.Day01;
 
-public class Day02PartOne
+public class Day02PartTwo
 {
     public static long CalculateResult(string[] input)
     {
@@ -13,11 +13,6 @@ public class Day02PartOne
             r.Add(long.Parse(a[1]));
         }
 
-        l.Sort();
-        r.Sort();
-
-        var lr = l.Zip(r);
-
-        return lr.Select((x) => Math.Abs(x.First - x.Second)).Sum();
+        return l.Select(x => x * r.Count(y => y == x)).Sum();
     }
 }
