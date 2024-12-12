@@ -18,14 +18,14 @@ public class Day01PartTwoTests
                                      """;
 
         var input = inputFileText.Split(Environment.NewLine);
-        Day02PartTwo.CalculateResult(input).Should().Be(31);
+        Day01PartTwo.CalculateResult(input).Should().Be(31);
     }
 
     [Test]
     public void PartTwo_CalculateResult()
     {
         var input = File.ReadAllLines(@"Input/input01.txt");
-        var result = Day02PartTwo.CalculateResult(input);
+        var result = Day01PartTwo.CalculateResult(input);
         Console.WriteLine(result);
         result.Should().Be(21142653L);
     }

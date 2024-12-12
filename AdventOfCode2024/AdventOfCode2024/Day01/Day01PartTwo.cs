@@ -1,6 +1,6 @@
 ﻿namespace AdventOfCode2024.Day01;
 
-public class Day02PartTwo
+public class Day01PartTwo
 {
     public static long CalculateResult(string[] input)
     {
